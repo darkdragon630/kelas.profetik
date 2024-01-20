@@ -1,0 +1,367 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Medium', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(#FF8008, #FFFDE9);
+  color: white;
+  transition: background-color 1s;
+  background-attachment: fixed;
+
+}
+
+a.navbar-brand {
+  margin: 0 auto;
+  margin-left: 88px;
+}
+
+#good {
+  font-size: 25px;
+  color: #fafcff;
+  margin-left: 18px;
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hi_makhluk {
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 20vh; /* Sesuaikan nilai sesuai kebutuhan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Sesuaikan nilai sesuai kebutuhan */
+  margin: 0;
+}
+
+.pencarian input {
+  background-image: url("search.png");
+  background-size: 20px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  margin-left: 20px;
+  background-color: whitesmoke;
+  width: 89%;
+  height: 40px;
+  border-radius: 35px;
+  margin-top: 1em;
+  border: none;
+}
+
+.Welcome {
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-image: url("icon.jpeg");
+  background-repeat: no-repeat;
+  background-size: 7em;
+  background-position: right;
+}
+
+.bawah_welcome {
+  color: #F1F1F1;
+}
+
+
+.box_project {
+  margin-top: 10px;
+  color: floralwhite;
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 1.3em;
+  text-align: left;
+  width: 40%;
+  border: 0.3px solid whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: linear-gradient(to left top, #FCEABB, #F8B500);
+  border-radius: 25px;
+}
+
+.gambar_buku {
+  margin-top: 0.5em;
+  margin-left: 5px;
+  margin-right: 10%;
+  position: relative;
+}
+
+.this_week {
+  color: white;
+  margin-top: 5px;
+  margin-right: 8px;
+}
+
+
+#tugas_button {
+  width: 4em;
+  font-size: 1em;
+  margin-top: 0.4em;
+  color: white;
+  background-color: #14ff5b;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.atur_box {
+  display: inline-flex;
+}
+
+.box_project span {
+  position: absolute;
+  margin-top: 1em;
+  margin-left: -1.4em;
+}
+
+.box_project b {
+  text-align: left
+}
+
+.text_icon {
+  font-size: 5px;
+}
+
+#navbar_bottom {
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  -webkit-box-shadow: 0px -3px 15px -7px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px -3px 15px -7px rgba(0, 0, 0, 0.46);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.navbar i {
+  font-size: 22px;
+  text-align: right;
+  color: black; 
+}
+
+.tarik {
+  color: black;
+  -webkit-box-shadow: 0px -3px 15px -7px rgba(0, 0, 0, 0.46);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #0cc0ed;
+  box-shadow: rgba(0, 0, 0, 0.23) 0px -3px 6px;
+}
+
+.garis_tarik {
+  background-color: dimgrey;
+  width: 84px;
+  height: 9px;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.Senin,
+.Selasa,
+.Rabu,
+.Kamis,
+.Jumat,
+.Sabtu{
+  text-align: center;
+  margin-left: 20px;
+  color: #f592f7;
+  background: linear-gradient(#0b23e0, #8b07e4);
+  width: 70px;
+  border-radius: 20px;
+}
+
+.mapel {
+  margin-left: -11px;
+  margin-right: 20px;
+  background-color: #3737b3;
+  font-size: 12px;
+  padding: 9px;
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: auto;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.li {
+   color: white;
+}
+
+.religious,
+.language,
+.ppkn {
+  color: black;
+}
+
+
+.tarik h4 {
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: #fafafa;
+  text-align: center;
+  width: 200px;
+  margin: 20px auto;
+  background: linear-gradient( #1feaa6, #10b9da);
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+#Buttonj {
+  border-radius: 20px;
+  background: linear-gradient(#a96e0a, #e8a55996);
+  color: white;
+  border: none;
+  text-align: center;
+}
+
+#input {
+  background-size: 20px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  margin-top: 0.7em;
+  width: 18em;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  gap: 1rem;
+}
+
+#input:nth-child(1) {
+  background: url("user-solid.svg");
+  background-size: 20px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-color: wheat;
+}
+
+#input:nth-child(2) {
+  background: url("paper-plane-regular.svg");
+  background-size: 20px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-color: wheat;
+}
+
+#input:nth-child(3) {
+  background: url("envelope-open-text-solid.svg");
+  background-size: 20px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-color: wheat;
+}
+
+.buttonSubmit {
+  position: relative;
+  margin-right: 12em;
+  width: 83px;
+  height: 38px;
+  margin-top: 15px;
+  font-size: 17px;
+  background-color: #FED049;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width .5s, border-radius .5s;
+}
+
+.buttonSubmit * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity .25s;
+}
+
+#iconv {
+  opacity: 0;
+}
+
+.buttonSubmit:focus {
+  width: 80px;
+  background-color: yellow;
+  border-radius: 6px;
+}
+
+.buttonSubmit:focus .text {
+  opacity: 0;
+}
+
+.buttonSubmit:focus #iconv {
+  opacity: 1;
+  transition: height .5s;
+}
+
+.menfess {
+  background: linear-gradient(-45deg, #1a9aea, #e51fba);
+  
+}
+
+#quoteleft {
+  font-size: 2rem;
+  float: left;
+  color: #faf4f4;
+  margin-top: 10px;
+}
+
+#quoteright {
+  font-size: 2rem;
+  float: right;
+  color: #fafafa;
+  margin-top: 10px;
+}
+
+.dropdown {
+  display: inline;
+}
+
+
+
+@media screen and (min-width:1024px) {
+  a.navbar-brand {
+    text-align: center;
+  }
+
+  .buttonSubmit {
+    margin-right: 42em;
+  }
+
+  #input {
+    width: 50rem;
+  }
+
+}
