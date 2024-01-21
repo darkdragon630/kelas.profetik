@@ -4,20 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gatau</title>
+  <title>Gatau - Search</title>
+  <style>
+    .search-results {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
- <a href="index.html">⇦back</a>
+  <a href="index.html">⇦back</a>
   <br>
-<br>
+  <br>
   <center>
     <marquee style="font-size: 1.5em;">Kamu Bertanya-tanya</marquee>
-        <br>
     <br>
-
-    <img src="STK-Kamu_nanya.jpg" alt="STK-Kamu_nanya.jpg" width="50%">
+    <br>
+    <input type="text" id="searchInput" placeholder="Search..." oninput="searchContent()">
+    <div id="searchResults" class="search-results">
+      <img src="STK-Kamu_nanya.jpg" alt="STK-Kamu_nanya.jpg" width="50%">
+      <br>
+      <p>NAJWA KAMILA ABDULLAH</p>
+    </div>
   </center>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var searchInput = document.getElementById('searchInput');
+      var urlParams = new URLSearchParams(window.location.search);
+      var savedSearchTerm = urlParams.get('searchTerm');
+
+      if (savedSearchTerm) {
+        searchInput.value = savedSearchTerm;
+        searchContent();
+      }
+    });
+
+    function searchContent() {
+      var searchInput = document.getElementById('searchInput');
+      var searchResults = document.getElementById('searchResults');
+
+      if (searchInput.value.toLowerCase().includes('najwa kamila abdullah')) {
+        searchResults.style.display = 'block';
+      } else {
+        searchResults.style.display = 'none';
+      }
+    }
+  </script>
 </body>
 
 </html>
