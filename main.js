@@ -130,6 +130,27 @@ toggle.addEventListener('click', function() {
   }
 });
 
+$(document).ready(function(){
+    $('.carousel-track').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            }
+        ]
+    });
+});
+
 function Alert() {
   Swal.fire(
     '',
