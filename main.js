@@ -64,7 +64,7 @@ toggle.addEventListener('click', function() {
     jadwal_piket3.style.color = 'white';
     jadwal_piket4.style.color = 'white';
     jadwal_piket5.style.color = 'white';
-    jadwal_piket6.style.color = 'black';
+    jadwal_piket6.style.color = 'white';
     judul1.style.color = 'white';
     judul2.style.color = 'white';
     judul3.style.color = 'white';
