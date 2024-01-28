@@ -130,6 +130,11 @@ toggle.addEventListener('click', function() {
   }
 });
 
+function updateAction() {
+      var searchTerm = document.forms["form1"]["pencarian"].value;
+      document.forms["form1"].action = "search.html?searchTerm=" + encodeURIComponent(searchTerm);
+});
+
 $(document).ready(function(){
     $('.carousel-track').slick({
         infinite: true,
