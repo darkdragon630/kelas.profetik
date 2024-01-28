@@ -331,27 +331,32 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+.carousel-info {
+    text-align: center;
+}
+
 .carousel-container {
     margin: auto;
     overflow: hidden;
     position: relative;
     width: 80%;
     max-width: 600px;
-    margin-bottom: 20px; /* Adjust the height of the carousel container */
+    margin-bottom: 20px;
 }
 
 .carousel-track {
     display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Aktifkan pengguliran halus pada perangkat iOS */
 }
 
 .carousel-slide {
     flex: 0 0 auto;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 10px;
     text-align: center;
     scroll-snap-align: start;
-}
 
     .slide-box {
         border: 2px solid #ddd;
@@ -361,13 +366,10 @@ body {
         background: rgba(255, 255, 255, 0.03);
         backdrop-filter: blur(6px);
         -webkit-backdrop-filter: blur(5px);
-        background-repeat: no-repeat;
-        background-size: 7em;
-        background-position: right;
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 0px;
+        margin-top: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
         font-weight: bold;
     }
 
@@ -378,14 +380,15 @@ body {
     }
 }
 
-/* Mobile Styles */
+/* Gaya untuk Perangkat Seluler */
 @media screen and (max-width: 600px) {
     .carousel-track {
-        flex-direction: column; /* Display slides in a column on smaller screens */
-        scroll-snap-type: y mandatory; /* Enable snapping to each slide vertically */
-        overflow-y: auto; /* Allow vertical scrolling on smaller screens */
+        flex-direction: column;
+        scroll-snap-type: y mandatory;
+        overflow-y: auto;
     }
 }
+
 
 .menfess {
   background: linear-gradient(-45deg, #1a9aea, #e51fba);
