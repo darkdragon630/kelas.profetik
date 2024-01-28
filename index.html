@@ -54,16 +54,9 @@
   <div class="Hi_makhluk">Hi! Siswa PROFETIK!</div>
   </div>
   <div id="good" ></div>
-  <form id="form1" name="form1" method="post" onsubmit="updateAction()">
-    <div class="pencarian"><input type="text" name="pencarian" placeholder="Cari..."></div>
+  <form id="form1" name="form1" method="get" action="search.html">
+    <div class="pencarian"><input type="text" name="searchTerm" placeholder="Cari..."></div>
   </form>
-
-  <script>
-    function updateAction() {
-      var searchTerm = document.forms["form1"]["pencarian"].value;
-      document.forms["form1"].action = "search.html?searchTerm=" + encodeURIComponent(searchTerm);
-    }
-  </script>
   
   <div class="Welcome" id="Welc">Welcome
     <br>
