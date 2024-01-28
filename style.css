@@ -327,6 +327,7 @@ a.navbar-brand {
 }
 
 body {
+body {
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
@@ -337,11 +338,13 @@ body {
     position: relative;
     width: 80%;
     max-width: 600px;
-    margin-bottom: 20px; /* Adjust the height of the carousel container */
+    margin-bottom: 20px;
 }
 
 .carousel-track {
     display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
 .carousel-slide {
@@ -364,14 +367,12 @@ body {
     background-repeat: no-repeat;
     background-size: 7em;
     background-position: right;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 0px;
+    margin: 5px 10px;
+    padding: 20px;
     font-weight: bold;
 }
 
-img {
+.slide-box img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -380,11 +381,12 @@ img {
 /* Mobile Styles */
 @media screen and (max-width: 600px) {
     .carousel-track {
-        flex-direction: column; /* Display slides in a column on smaller screens */
-        scroll-snap-type: y mandatory; /* Enable snapping to each slide vertically */
-        overflow-y: auto; /* Allow vertical scrolling on smaller screens */
+        flex-direction: column;
+        scroll-snap-type: y mandatory;
+        overflow-y: auto;
     }
 }
+
 
 
 .menfess {
