@@ -427,3 +427,16 @@ body {
   }
 
 }
+
+  /* CSS untuk pemisah */
+  .separator {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+  }
+
+  /* CSS untuk footer */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+  }
