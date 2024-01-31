@@ -21,22 +21,36 @@
       margin: 15px;
     }
 
-    animasi-teks {
+    .animasi-teks {
        font-size: 19px;
        width: 100%;
        white-space:nowrap;
        overflow:hidden;
-       -webkit-animation: typing 5s steps(70, end);
-       animation: animasi-ketik 5s steps(70, end);
+       animation: typing 5s steps(70), blink-caret 1s step-end infinite;
+       -webkit-animation: typing 5s steps(70), blink-caret 1s step-end infinite;
     }
-    
-  @keyframes animasi-ketik{
-  from { width: 0; }
-}
-    
-@-webkit-keyframes animasi-ketik{
-  from { width: 0; }
-}
+
+    @keyframes typing {
+      from { width: 0; }
+      
+      to { width: 100%; }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: black; }
+    }
+
+    @-webkit-keyframes typing {
+      from { width: 0; }
+      
+      to { width: 100%; }
+    }
+
+    @-webkit-keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: black; }
+    }
 
     input[type=text] {
       width: 100%;
@@ -100,6 +114,7 @@
   <a href="index.html"><button>⇦back</button></a>
   <br>
   <center>
+   
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         var searchInput = document.getElementById('searchInput');
