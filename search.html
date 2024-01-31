@@ -21,10 +21,22 @@
       margin: 15px;
     }
 
-    marquee {
-      margin: 0;
-      padding: 0;
+    animasi-teks {
+                 font-size: 19px;
+                 width: 100%;
+                 white-space:nowrap;
+                 overflow:hidden;
+                 -webkit-animation: typing 5s steps(70, end);
+                 animation: animasi-ketik 5s steps(70, end);
     }
+    
+  @keyframes animasi-ketik{
+  from { width: 0; }
+}
+    
+@-webkit-keyframes animasi-ketik{
+  from { width: 0; }
+}
 
     input[type=text] {
       width: 100%;
@@ -79,9 +91,9 @@
     <div id="searchResults" class="search-results">
       <img src="najwa-kamila-abdullah.jpg" alt="najwa-kamila-abdullah.jpg" class="blurred">
       <br>
-      <marquee style="font-size: 2em;">SELAMAT ULANG TAHUN NAJWA 🎉🎂</marquee>
       <p>HAI NAJWA</p>
     </div>
+    <div class="animasi-teks">HAPPY BIRTHDAY NAJWA 🎉🎂</div>
   </center>
 
   <a href="index.html"><button>⇦back</button></a>
