@@ -11,15 +11,19 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Untuk tampilan desktop atau layar besar */
 body {
   background-image: url('pak jaya.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: scroll;  
   background-size: cover;
-  height: 100vh; /* Memastikan background mencakup seluruh tinggi layar */
-  width: 100%; /* Memastikan background mencakup seluruh lebar layar */
-  margin: 0; /* Menghapus margin bawaan */
-  padding: 0; /* Menghapus padding bawaan */
+}
+
+/* Untuk tampilan smartphone */
+@media (max-width: 768px) {
+  body {
+    background-size: contain; /* Menyesuaikan ukuran gambar untuk layar kecil */
+  }
 }
 
 
