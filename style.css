@@ -11,20 +11,20 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Untuk tampilan desktop atau layar besar */
 body {
   background-image: url('pak jaya.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;  
-  background-size: cover;
+  background-size: cover; /* Ukuran gambar latar belakang diatur agar mencakup seluruh area */
 }
 
 /* Untuk tampilan smartphone */
 @media (max-width: 768px) {
   body {
-    background-size: contain; /* Menyesuaikan ukuran gambar untuk layar kecil */
+    background-size: auto 300px; /* Ukuran gambar latar belakang diatur menjadi ukuran kecil saat tampilan smartphone */
   }
 }
+
 
 
 a.navbar-brand {
