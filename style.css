@@ -12,11 +12,10 @@ html {
 }
 
 body {
-  background: linear-gradient(#FF8008, #FFFDE9);
-  color: white;
-  transition: background-color 1s;
-  background-attachment: fixed;
-
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 }
 
 a.navbar-brand {
