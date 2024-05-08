@@ -16,7 +16,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
+  height: 100vh; /* Memastikan background mencakup seluruh tinggi layar */
+  width: 100%; /* Memastikan background mencakup seluruh lebar layar */
+  margin: 0; /* Menghapus margin bawaan */
+  padding: 0; /* Menghapus padding bawaan */
 }
+
 
 a.navbar-brand {
   margin: 0 auto;
@@ -176,20 +181,20 @@ a.navbar-brand {
   margin: 0 auto;
   margin-bottom: 15px;
 }
-
 .Senin,
 .Selasa,
 .Rabu,
 .Kamis,
 .Jumat,
-.Sabtu{
+.Sabtu {
   text-align: center;
   margin-left: 20px;
   color: #f592f7;
-  background: linear-gradient(#0b23e0, #8b07e4);
+  background: linear-gradient(rgba(11, 35, 224, 0.7), rgba(139, 7, 228, 0.7)); /* Ubah nilai warna dan opasitas di sini */
   width: 70px;
   border-radius: 20px;
 }
+
 
 .mapel {
   margin-left: -11px;
