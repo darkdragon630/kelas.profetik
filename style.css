@@ -203,7 +203,6 @@ a.navbar-brand {
 .mapel {
   margin-left: -11px;
   margin-right: 20px;
-  background-color: #3737b3;
   font-size: 12px;
   padding: 9px;
   list-style: none;
@@ -218,6 +217,7 @@ a.navbar-brand {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 
 .li {
    color: white;
